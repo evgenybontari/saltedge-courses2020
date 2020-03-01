@@ -13,10 +13,9 @@ puts count
 names = names.map(&:downcase)
 
 #4
-hash = {}
-hash = names.each_with_object({}) do|element, object| object[element] = element.size
+hash = names.each_with_object({}) do|element, object|
+  object[element] = element.size
 end
-puts hash
 
 #5
 hash = {}
@@ -25,12 +24,10 @@ hash.key(hash.values.max)
 
 puts names.max_by(&:length)
 
-names.map(&:length).max
-
 #6
 longest_name = names.max_by(&:length)
 longest_name_index = names.index(longest_name)
-
+print longest_name_index
 #7
 puts names.sort_by(&:length)
 
