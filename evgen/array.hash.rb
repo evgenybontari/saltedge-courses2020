@@ -18,16 +18,13 @@ hash = names.each_with_object({}) do|element, object|
 end
 
 #5
-hash = {}
-names.map {|a| hash[a] = a.length}
-hash.key(hash.values.max)
-
 puts names.max_by(&:length)
 
 #6
 longest_name = names.max_by(&:length)
 longest_name_index = names.index(longest_name)
 print longest_name_index
+
 #7
 puts names.sort_by(&:length)
 
@@ -36,4 +33,4 @@ count = 0
 names_2d.each {|s| count += s.length}
 puts count
 
-puts names_2d.sort_by(&:length)
+print names_2d.sort_by(&:length)
