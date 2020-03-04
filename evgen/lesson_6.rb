@@ -131,10 +131,10 @@ contacts = {
   "Joe Smith" => {},
   "Sally Johnson" => {}
 }
-contacts_fields = [:email, :address, :phone]
+fields = [:email, :address, :phone]
 
 contacts.each do |name, hash|
-  contacts_fields.each do |field|
+  fields.each do |field|
     hash[field] = contact_data.shift
   end
 end
