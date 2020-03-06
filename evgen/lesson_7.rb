@@ -14,7 +14,7 @@ numbers(2,3,4,5)
 #and outputs the result of dividing the dividend by the divisor. Try to
 #change the order of the keyword arguments when invoking the method!
 def result_of_dividing(divident: 33, divisor:3)
-  p divident, divisor
+  p "Result: #{divident / divisor}"
 end
 result_of_dividing(divident:99, divisor:9)
 result_of_dividing(divisor:7, divident: 77)
@@ -22,7 +22,7 @@ result_of_dividing(divisor:7, divident: 77)
 #Do the same as in exercise 3, but make the dividend a simple argument
 #(not a keyword one). See if changing the order of the arguments still works!
 def result_of_dividing(divident: 33, divisor:3)
-  p divident, divisor
+  p "Result: #{divident / divisor}"
 end
 (divident:99, divisor:)
 
